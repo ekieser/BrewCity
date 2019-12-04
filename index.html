@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Need help find breweries near you?">
+    <link rel="stylesheet" href="main.css">
+    <title>Brewery Locator</title>
+</head>
+<body>
+    <header role="banner">
+        <h1>Find Breweries near you!</h1>
+    </header>
+    <main role="main">
+        <form id="user-search">
+            <fieldset>
+                <legend><h2>Enter City:</h2></legend>
+                <input id="city-entry" type="text" placeholder="City">
+                <legend><h2>Enter State:</h2></legend>
+                <input id="state-entry" type="text" placeholder="State">
+                <br><br><input id="food-entry" type="checkbox" value="food">Food Service
+                <input id="tour-entry" type="checkbox" value="tours">Brewery Tours
+                <input id="dog-entry" type="checkbox" value="dogs">Dog-friendly
+            </fieldset>
+        </form>
+    </main>
+    <section role="complementary">
+        <div id="display-results">
+
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+#food-entry, #dog-entry, #tour-entry {
+    display: flex;
+    flex-direction: column;
+}
