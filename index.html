@@ -19,9 +19,12 @@
                 <input id="city-entry" type="text" placeholder="City">
                 <legend><h2>Enter State:</h2></legend>
                 <input id="state-entry" type="text" placeholder="State">
+                <legend><h2>Enter specific brewery name:</h2></legend>
+                <input id="name-entry" type="text" placeholder="Name">
                 <br><br><input id="food-entry" type="checkbox" value="food">Food Service
                 <input id="tour-entry" type="checkbox" value="tours">Brewery Tours
                 <input id="dog-entry" type="checkbox" value="dogs">Dog-friendly
+                <button id="submit-entry" type="submit">Search</button>
             </fieldset>
         </form>
     </main>
@@ -29,6 +32,7 @@
         <div id="display-results">
 
         </div>
+        <p id="js-error-message"></p>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>
