@@ -4,7 +4,7 @@ const searchURL = 'https://api.openbrewerydb.org/breweries';
 
 const mapURL = 'https://www.google.com/maps/search/?api=1&query=';
 
-function retrieveCity() {
+function retrieveResults() {
     const cityValue = $('#city-entry').val().toLowerCase();
     const url = searchURL + '?by_city=' + `${cityValue}` + '&per_page=50';
     fetch(url)
@@ -42,7 +42,7 @@ function beginSearch() {
         $('#display-results').html('');
         $('#js-error-message').html('');
         const citySearch = $('#city-entry').val();
-        retrieveCity(citySearch);
+        retrieveResults(citySearch);
     });
 }
 
