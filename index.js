@@ -25,11 +25,12 @@ function displayResults(responseJson) {
     for (let i = 0; i < responseJson.length; i++) {
         $('#display-results').append(
             `<h3>${responseJson[i].name}</h3>
-            <p><a href="${mapURL}${responseJson[i].name}" target="_blank">${responseJson[i].street}, ${responseJson[i].city}, ${responseJson[i].state}</a></p>
-            <p>Brewery type: ${responseJson[i].brewery_type}</p>
-            <p>Phone number: ${responseJson[i].phone}</p>
-            <p>Website: <a href="${responseJson[i].website_url}" target="_blank">${responseJson[i].website_url}</a></p>
-            <p>${responseJson[i].tag_list}</p>`
+            <ul>
+            <li><a href="${mapURL}${responseJson[i].name}" target="_blank">${responseJson[i].street}, ${responseJson[i].city}, ${responseJson[i].state}</a></li>
+            <li>Brewery type: ${responseJson[i].brewery_type}</li>
+            <li>Phone number: ${responseJson[i].phone}</li>
+            <li>Website: <a href="${responseJson[i].website_url}" target="_blank">${responseJson[i].website_url}</a></li>
+            </ul>`
         )
     };
 }

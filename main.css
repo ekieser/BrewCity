@@ -2,10 +2,142 @@
     box-sizing: border-box;
 }
 
-#food-entry, #dog-entry, #tour-entry {
-    display: flex;
-    flex-direction: column;
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(187, 187, 187);
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
 }
 
+header {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin-top: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-image: url(images/beermugs.png);
+    background-position: center;
+    padding-top: 50px;
+    font-weight: bold;
+    text-shadow: 
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
 
+form {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-color: whitesmoke;
+    border-radius: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
+fieldset {
+    border: none;
+}
+
+#city-entry {
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+#submit-entry {
+   margin-top: 10px;
+   margin-left: 25px;
+   width: 100px;
+   height: 30px;
+   border: 1px solid;
+   border-radius: 5px;
+   color: white;
+   background-color: rgb(97, 192, 97);
+   font-weight: bold;
+   cursor: pointer;
+}
+
+#submit-entry:hover {
+    background-color: rgb(0, 148, 0);
+    transition-duration: 0.2s;
+}
+
+li {
+    margin-bottom: 2px;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+ul {
+    padding-bottom: 10px;
+    border-bottom: 3px dotted black;
+}
+
+@media only screen and (min-width: 660px) {
+    header {
+        padding-top: 35px;
+        font-size: 24px;
+    }
+    #submit-entry {
+        margin-left: 0px;
+        width: 150px;
+        height: 40px;
+    }
+    form {
+        width: 33%;
+    }
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    legend {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    li {
+        margin-bottom: 5px;
+    }
+    section {
+        text-indent: 1%;
+        margin-top: 30px;
+    }
+} 
+
+@media only screen and (min-width: 1200px) {
+    header {
+        font-size: 40px;
+    }
+    form {
+        width: 25%;
+        height: 250px;
+    }
+    h3 {
+        margin-top: 3%;
+        font-size: 32px;
+    }
+    section {
+        text-align: center;
+    }
+    legend {
+        font-size: 24px;
+    }
+    ul {
+        font-size: 18px;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;
+    }
+    #city-entry {
+        height: 30px;
+    }
+    #submit-entry {
+        margin-top: 25px;
+        height: 50px;
+    }
+}
