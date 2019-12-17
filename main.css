@@ -34,6 +34,7 @@ form {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    height: 170px;
 }
 
 fieldset {
@@ -43,6 +44,7 @@ fieldset {
 #city-entry {
     height: 25px;
     margin-bottom: 10px;
+    width: 135px;
 }
 
 #submit-entry {
@@ -61,6 +63,11 @@ fieldset {
 #submit-entry:hover {
     background-color: rgb(0, 148, 0);
     transition-duration: 0.2s;
+}
+
+section {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 li {
@@ -106,6 +113,9 @@ ul {
         text-indent: 1%;
         margin-top: 30px;
     }
+    #city-entry {
+        width: 147px;
+    }
 } 
 
 @media only screen and (min-width: 1200px) {
@@ -135,6 +145,7 @@ ul {
     }
     #city-entry {
         height: 30px;
+        width: 147px;
     }
     #submit-entry {
         margin-top: 25px;
