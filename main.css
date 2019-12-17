@@ -34,7 +34,7 @@ form {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    height: 170px;
+    height: 177px;
 }
 
 fieldset {
@@ -45,6 +45,7 @@ fieldset {
     height: 25px;
     margin-bottom: 10px;
     width: 135px;
+    font-size: 16px;
 }
 
 #submit-entry {
