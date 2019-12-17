@@ -34,7 +34,7 @@ form {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    height: 177px;
+    height: 170px;
 }
 
 fieldset {
@@ -82,6 +82,10 @@ h3 {
 ul {
     padding-bottom: 10px;
     border-bottom: 3px dotted black;
+}
+
+legend {
+    padding-top: 10px;
 }
 
 @media only screen and (min-width: 660px) {
