@@ -6,7 +6,7 @@ const mapURL = 'https://www.google.com/maps/search/?api=1&query=';
 
 function retrieveResults() {
     const cityValue = $('#city-entry').val().toLowerCase();
-    const stateValue = $('#state-value'.val().toLowerCase();
+    const stateValue = $('#state-value').val().toLowerCase();
     const url = searchURL + '?by_city=' + `${cityValue}` + '&by_state=' + `${stateValue}` + '&per_page=50';
     fetch(url)
     .then(response => {
