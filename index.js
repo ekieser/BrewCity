@@ -25,6 +25,7 @@ function displayResults(responseJson) {
     console.log(responseJson);
     if (responseJson.length === 0) {
         $('#display-results').append(`<h3>No Breweries were found in this city</h3>`)
+        return
     }
     for (let i = 0; i < responseJson.length; i++) {
         $('#display-results').append(
