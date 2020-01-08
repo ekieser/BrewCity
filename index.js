@@ -6,7 +6,8 @@ const mapURL = 'https://www.google.com/maps/search/?api=1&query=';
 
 function retrieveResults() {
     const cityValue = $('#city-entry').val().toLowerCase();
-    const url = searchURL + '?by_city=' + `${cityValue}` + '&per_page=50';
+    const stateValue = $('#state-value'.val().toLowerCase();
+    const url = searchURL + '?by_city=' + `${cityValue}` + '&by_state=' + `${stateValue}` + '&per_page=50';
     fetch(url)
     .then(response => {
         if (response.ok) {
@@ -22,6 +23,9 @@ function retrieveResults() {
 
 function displayResults(responseJson) {
     console.log(responseJson);
+    if (responseJson.length === 0) {
+        $('#display-results').append(`<h3>No Breweries were found in this city</h3>`)
+    }
     for (let i = 0; i < responseJson.length; i++) {
         $('#display-results').append(
             `<h3>${responseJson[i].name}</h3>
@@ -42,7 +46,8 @@ function beginSearch() {
         $('#display-results').html('');
         $('#js-error-message').html('');
         const citySearch = $('#city-entry').val();
-        retrieveResults(citySearch);
+        const stateSearch = $('#state-entry').val();
+        retrieveResults(citySearch, stateSearch);
     });
 }
 
