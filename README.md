@@ -2,7 +2,7 @@ Brew City App
 
 https://ekieser.github.io/BrewCity/
 
-![Screenshot_2020-01-08 Brew City](https://user-images.githubusercontent.com/53837375/72023418-5727b980-3238-11ea-84d3-a2e6283fc40c.png)
+![new-brewcity](https://user-images.githubusercontent.com/53837375/80018300-6d7e1c00-849b-11ea-8d61-a946f2337ec9.png)
 
 -Uses Open Brewery DB API to locate breweries near you. 
 
